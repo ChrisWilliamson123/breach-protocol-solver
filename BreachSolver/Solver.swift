@@ -18,9 +18,11 @@ class Solver: ObservableObject {
     let daemons: [Daemon]
     let matrix: [[String]]
     
-    init(matrix: [[String]], daemons: [[String]]) {
+    init(matrix: [[String]], daemons: [[String]], bufferSize: Int) {
         self.matrix = matrix
         self.daemons = daemons.enumerated().map({ (index, sequence) in Daemon(sequence: sequence, id: index + 1) })
+        self.bufferSize = bufferSize
+        self.maxDaemons = daemons.count
     }
     
 //    let daemons: [Daemon] = [
@@ -37,8 +39,8 @@ class Solver: ObservableObject {
 //        ["1C", "55", "BD", "1C", "BD", "1C"],
 //    ]
     
-    let bufferSize = 6
-    let maxDaemons = 3
+    let bufferSize: Int
+    let maxDaemons: Int
     @Published var toSolve: [SequenceToSolve] = []
     
     func solve() {

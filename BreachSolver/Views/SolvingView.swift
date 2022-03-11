@@ -10,8 +10,8 @@ import SwiftUI
 struct SolvingView: View {
     @StateObject private var solver: Solver
     
-    init(text: RecognisedBreachText) {
-        _solver = StateObject(wrappedValue: Solver(matrix: text.matrix, daemons: text.daemons))
+    init(text: RecognisedBreachText, bufferSize: Int) {
+        _solver = StateObject(wrappedValue: Solver(matrix: text.matrix, daemons: text.daemons, bufferSize: bufferSize))
     }
     
     var body: some View {

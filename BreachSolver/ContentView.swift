@@ -31,6 +31,7 @@ struct ContentView: View {
     
     @State private var showingScanningView = false
     @State private var alertItem: AlertItem?
+    @State private var bufferSize = 6
 //    @State private var recognizedText: RecognisedBreachText?
     @State private var recognizedText: RecognisedBreachText? = RecognisedBreachText(matrix: Constants.textMatrix, daemons: Constants.testDaemons)
     
@@ -45,7 +46,7 @@ struct ContentView: View {
                             
                             VStack(spacing: 16) {
                                 createScannedTextView(using: text)
-                                NavigationLink(destination: SolvingView(text: text)) {
+                                NavigationLink(destination: SolvingView(text: text, bufferSize: bufferSize)) {
                                     Text("SOLVE")
                                         .font(.system(size: 24, design: .monospaced))
                                         .padding()
@@ -64,6 +65,7 @@ struct ContentView: View {
                 Spacer()
                 
                 HStack {
+                    Stepper("Buffer size: \(Int(bufferSize))", value: $bufferSize, in: 4...9, step: 1).frame(width: 230)
                     Spacer()
                     
                     Button(action: {
