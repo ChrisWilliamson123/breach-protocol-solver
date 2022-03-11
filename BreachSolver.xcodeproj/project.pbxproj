@@ -17,7 +17,8 @@
 		8366858427D7C74B003950E1 /* BreachSolverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366858327D7C74B003950E1 /* BreachSolverUITests.swift */; };
 		8366858627D7C74B003950E1 /* BreachSolverUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366858527D7C74B003950E1 /* BreachSolverUITestsLaunchTests.swift */; };
 		8366859427D7C7ED003950E1 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 8366859327D7C7ED003950E1 /* Algorithms */; };
-		83C6D1F027DB8076000840CC /* SolvingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6D1EF27DB8076000840CC /* SolvingView.swift */; };
+		83C6D1F427DB8B48000840CC /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6D1F327DB8B48000840CC /* InstructionsView.swift */; };
+		83C6D1F627DB8BC4000840CC /* SolvingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6D1F527DB8BC4000840CC /* SolvingView.swift */; };
 		83E1BBCF27DA5C3C00DFE454 /* SequenceToSolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E1BBCE27DA5C3C00DFE454 /* SequenceToSolve.swift */; };
 		83E1BBD127DA5C5800DFE454 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E1BBD027DA5C5800DFE454 /* Node.swift */; };
 		83E1BBD327DA5C5F00DFE454 /* Coord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E1BBD227DA5C5F00DFE454 /* Coord.swift */; };
@@ -58,7 +59,8 @@
 		8366858327D7C74B003950E1 /* BreachSolverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreachSolverUITests.swift; sourceTree = "<group>"; };
 		8366858527D7C74B003950E1 /* BreachSolverUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreachSolverUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		83C6D1EE27DA7EAB000840CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		83C6D1EF27DB8076000840CC /* SolvingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolvingView.swift; sourceTree = "<group>"; };
+		83C6D1F327DB8B48000840CC /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
+		83C6D1F527DB8BC4000840CC /* SolvingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolvingView.swift; sourceTree = "<group>"; };
 		83E1BBCE27DA5C3C00DFE454 /* SequenceToSolve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceToSolve.swift; sourceTree = "<group>"; };
 		83E1BBD027DA5C5800DFE454 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		83E1BBD227DA5C5F00DFE454 /* Coord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coord.swift; sourceTree = "<group>"; };
@@ -180,7 +182,8 @@
 			children = (
 				83E1BBD927DA646900DFE454 /* SequenceView.swift */,
 				83E1BBDB27DA795F00DFE454 /* ScanDocumentView.swift */,
-				83C6D1EF27DB8076000840CC /* SolvingView.swift */,
+				83C6D1F327DB8B48000840CC /* InstructionsView.swift */,
+				83C6D1F527DB8BC4000840CC /* SolvingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -322,7 +325,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				83E1BBD327DA5C5F00DFE454 /* Coord.swift in Sources */,
-				83C6D1F027DB8076000840CC /* SolvingView.swift in Sources */,
+				83C6D1F427DB8B48000840CC /* InstructionsView.swift in Sources */,
+				83C6D1F627DB8BC4000840CC /* SolvingView.swift in Sources */,
 				83E1BBDA27DA646900DFE454 /* SequenceView.swift in Sources */,
 				834DB4DE27D91845009D993E /* Heap.swift in Sources */,
 				83E1BBD527DA5C7A00DFE454 /* Solver.swift in Sources */,

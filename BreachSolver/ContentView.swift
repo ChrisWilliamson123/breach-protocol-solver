@@ -46,12 +46,20 @@ struct ContentView: View {
                             VStack(spacing: 16) {
                                 createScannedTextView(using: text)
                                 NavigationLink(destination: SolvingView(text: text)) {
-                                    Text("SOLVE").font(.system(size: 28, design: .monospaced))
+                                    Text("SOLVE")
+                                        .font(.system(size: 24, design: .monospaced))
+                                        .padding()
+                                        .foregroundColor(.white)
+                                        .background(Capsule().fill(.blue))
                                 }.disabled(!text.canSolve)
                             }.padding()
-                        }
+                        }.padding()
                     }
                 })
+                
+                if recognizedText == nil {
+                    InstructionsView()
+                }
                 
                 Spacer()
                 
@@ -61,11 +69,12 @@ struct ContentView: View {
                     Button(action: {
                         showingScanningView = true
                     }) {
-                        Text("Start Scanning")
+                        Text("SCAN")
                     }
+                    .font(.system(size: 16, design: .monospaced))
                     .padding()
                     .foregroundColor(.white)
-                    .background(Capsule().fill(Color.blue))
+                    .background(Capsule().fill(.blue))
                 }
                 .padding()
             }
