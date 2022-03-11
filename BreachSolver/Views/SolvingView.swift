@@ -22,7 +22,6 @@ struct SolvingView: View {
                 } else {
                     EmptyView()
                 }
-//                toSolve.isSolved ? PathedMatrixView(matrix: solver.matrix, coords: path) : EmptyView()
             } label: {
                 SequenceView(sequence: toSolve.sequence, daemonIds: toSolve.ids.sorted(), maxDaemons: solver.maxDaemons, solvedState: toSolve.solvedState)
             }.disabled(!toSolve.isSolved)
@@ -34,9 +33,3 @@ struct SolvingView: View {
         }.navigationTitle("Solving...")
     }
 }
-
-//struct SolvingView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        SolvingView()
-//    }
-//}
