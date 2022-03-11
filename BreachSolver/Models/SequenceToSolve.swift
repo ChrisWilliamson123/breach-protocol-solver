@@ -15,6 +15,11 @@ struct SequenceToSolve: Hashable {
     let ids: Set<Int> // The daemon IDs being solved
     var solvedState: SolvedState = .pending
     
+    var isSolved: Bool {
+        if case .solved = solvedState { return true }
+        return false
+    }
+    
     init(sequence: [String], ids: Set<Int>, solvedState: SolvedState = .pending) {
         self.sequence = sequence
         self.ids = ids

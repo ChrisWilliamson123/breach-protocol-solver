@@ -19,6 +19,8 @@
 		8366859427D7C7ED003950E1 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 8366859327D7C7ED003950E1 /* Algorithms */; };
 		83C6D1F427DB8B48000840CC /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6D1F327DB8B48000840CC /* InstructionsView.swift */; };
 		83C6D1F627DB8BC4000840CC /* SolvingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6D1F527DB8BC4000840CC /* SolvingView.swift */; };
+		83C6D1F827DB8DAC000840CC /* OptionallyNumberedCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6D1F727DB8DAC000840CC /* OptionallyNumberedCodeView.swift */; };
+		83C6D1FA27DB9003000840CC /* PathedMatrixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6D1F927DB9003000840CC /* PathedMatrixView.swift */; };
 		83E1BBCF27DA5C3C00DFE454 /* SequenceToSolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E1BBCE27DA5C3C00DFE454 /* SequenceToSolve.swift */; };
 		83E1BBD127DA5C5800DFE454 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E1BBD027DA5C5800DFE454 /* Node.swift */; };
 		83E1BBD327DA5C5F00DFE454 /* Coord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E1BBD227DA5C5F00DFE454 /* Coord.swift */; };
@@ -61,6 +63,8 @@
 		83C6D1EE27DA7EAB000840CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		83C6D1F327DB8B48000840CC /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
 		83C6D1F527DB8BC4000840CC /* SolvingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolvingView.swift; sourceTree = "<group>"; };
+		83C6D1F727DB8DAC000840CC /* OptionallyNumberedCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionallyNumberedCodeView.swift; sourceTree = "<group>"; };
+		83C6D1F927DB9003000840CC /* PathedMatrixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathedMatrixView.swift; sourceTree = "<group>"; };
 		83E1BBCE27DA5C3C00DFE454 /* SequenceToSolve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceToSolve.swift; sourceTree = "<group>"; };
 		83E1BBD027DA5C5800DFE454 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		83E1BBD227DA5C5F00DFE454 /* Coord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coord.swift; sourceTree = "<group>"; };
@@ -184,6 +188,8 @@
 				83E1BBDB27DA795F00DFE454 /* ScanDocumentView.swift */,
 				83C6D1F327DB8B48000840CC /* InstructionsView.swift */,
 				83C6D1F527DB8BC4000840CC /* SolvingView.swift */,
+				83C6D1F727DB8DAC000840CC /* OptionallyNumberedCodeView.swift */,
+				83C6D1F927DB9003000840CC /* PathedMatrixView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -329,9 +335,11 @@
 				83C6D1F627DB8BC4000840CC /* SolvingView.swift in Sources */,
 				83E1BBDA27DA646900DFE454 /* SequenceView.swift in Sources */,
 				834DB4DE27D91845009D993E /* Heap.swift in Sources */,
+				83C6D1FA27DB9003000840CC /* PathedMatrixView.swift in Sources */,
 				83E1BBD527DA5C7A00DFE454 /* Solver.swift in Sources */,
 				834DB4DF27D91845009D993E /* Dijkstra.swift in Sources */,
 				83E1BBDC27DA795F00DFE454 /* ScanDocumentView.swift in Sources */,
+				83C6D1F827DB8DAC000840CC /* OptionallyNumberedCodeView.swift in Sources */,
 				8366856B27D7C748003950E1 /* ContentView.swift in Sources */,
 				83E1BBD127DA5C5800DFE454 /* Node.swift in Sources */,
 				8366856927D7C748003950E1 /* BreachSolverApp.swift in Sources */,

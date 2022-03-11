@@ -15,10 +15,22 @@ struct SolvingView: View {
     }
     
     var body: some View {
-        List(solver.toSolve, id: \.self) {
-            SequenceView(sequence: $0.sequence, daemonIds: $0.ids.sorted(), maxDaemons: solver.maxDaemons, solvedState: $0.solvedState)
+        List(solver.toSolve, id: \.self) { toSolve in
+            NavigationLink {
+                if case let .solved(path) = toSolve.solvedState {
+                    PathedMatrixView(matrix: solver.matrix, coords: path)
+                } else {
+                    EmptyView()
+                }
+//                toSolve.isSolved ? PathedMatrixView(matrix: solver.matrix, coords: path) : EmptyView()
+            } label: {
+                SequenceView(sequence: toSolve.sequence, daemonIds: toSolve.ids.sorted(), maxDaemons: solver.maxDaemons, solvedState: toSolve.solvedState)
+            }.disabled(!toSolve.isSolved)
+
         }.onAppear {
-            solver.solve()
+            if solver.toSolve.count == 0 {
+                solver.solve()
+            }
         }.navigationTitle("Solving...")
     }
 }
