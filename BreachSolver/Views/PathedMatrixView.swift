@@ -44,6 +44,6 @@ struct PathedMatrixView: View {
 
 struct PathedMatrixView_Previews: PreviewProvider {
     static var previews: some View {
-        PathedMatrixView(matrix: Constants.textMatrix, coords: [.init(x: 2, y: 0), .init(x: 2, y: 5)])
+        PathedMatrixView(matrix: Constants.testTexts[0].matrix, coords: [.init(x: 2, y: 0), .init(x: 2, y: 5)])
     }
 }

@@ -2,18 +2,6 @@ import Combine
 import Foundation
 
 class Solver: ObservableObject {
-//    let daemons: [Daemon] = [
-//        .init(sequence: ["1C", "E9"], id: 1),
-//        .init(sequence: ["1C", "1C", "1C"], id: 2),
-//        .init(sequence: ["E9", "BD", "1C"], id: 3)
-//    ]
-//    let matrix: [[String]] = [
-//        ["55", "E9", "E9", "55", "BD"],
-//        ["1C", "BD", "E9", "1C", "E9"],
-//        ["BD", "1C", "1C", "55", "1C"],
-//        ["BD", "BD", "BD", "E9", "1C"],
-//        ["55", "BD", "1C", "55", "E9"]
-//    ]
     
     let daemons: [Daemon]
     let matrix: [[String]]
@@ -24,20 +12,6 @@ class Solver: ObservableObject {
         self.bufferSize = bufferSize
         self.maxDaemons = daemons.count
     }
-    
-//    let daemons: [Daemon] = [
-//        .init(sequence: ["1C", "BD", "1C"], id: 1),
-//        .init(sequence: ["7A", "55", "BD"], id: 2),
-//        .init(sequence: ["1C", "55", "7A"], id: 3)
-//    ]
-//    let matrix: [[String]] = [
-//        ["1C", "55", "55", "55", "1C", "55"],
-//        ["1C", "1C", "55", "BD", "1C", "7A"],
-//        ["1C", "7A", "55", "7A", "1C", "1C"],
-//        ["1C", "1C", "7A", "7A", "E9", "BD"],
-//        ["1C", "1C", "55", "E9", "1C", "7A"],
-//        ["1C", "55", "BD", "1C", "BD", "1C"],
-//    ]
     
     let bufferSize: Int
     let maxDaemons: Int
@@ -54,9 +28,6 @@ class Solver: ObservableObject {
                     let result = seq.solve(using: self.matrix, with: self.bufferSize)
                     DispatchQueue.main.async {
                         self.toSolve[i] = .init(sequence: seq.sequence, ids: seq.ids, solvedState: result)
-                    }
-                    do {
-                        sleep(1)
                     }
                 }
             }

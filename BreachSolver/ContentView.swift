@@ -8,20 +8,6 @@
 import SwiftUI
 import Algorithms
 
-struct Constants {
-    static let allowedCodes = ["1C", "BD", "FF", "7A", "E9", "55"]
-    static let textMatrix: [[String]] = [
-        ["1C", "1C", "1C", "BD", "FF", "1C", "7A"],
-        ["7A", "1C", "1C", "7A", "7A", "E9", "BD"],
-        ["55", "7A", "BD", "7A", "1C", "1C", "55"],
-        ["1C", "7A", "BD", "E9", "7A", "1C", "1C"],
-        ["1C", "7A", "1C", "7A", "E9", "55", "55"],
-        ["55", "55", "55", "7A", "55", "7A", "1C"],
-        ["1C", "1C", "1C", "E9", "FF", "E9", "55"]
-    ]
-    static let testDaemons: [[String]] = [ ["7A", "1C", "55"], ["1C", "1C", "55"], ["55", "55", "7A"] ]
-}
-
 struct ContentView: View {
     struct AlertItem: Identifiable {
         var id = UUID()
@@ -33,7 +19,7 @@ struct ContentView: View {
     @State private var alertItem: AlertItem?
     @State private var bufferSize = 6
 //    @State private var recognizedText: RecognisedBreachText?
-    @State private var recognizedText: RecognisedBreachText? = RecognisedBreachText(matrix: Constants.textMatrix, daemons: Constants.testDaemons)
+    @State private var recognizedText: RecognisedBreachText? = Constants.testTexts[2]
     
     var body: some View {
         NavigationView {

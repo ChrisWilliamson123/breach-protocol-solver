@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83180CBE27DE7A3E00238263 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83180CBD27DE7A3E00238263 /* Constants.swift */; };
 		834DB4DE27D91845009D993E /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DB4DC27D91845009D993E /* Heap.swift */; };
 		834DB4DF27D91845009D993E /* Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DB4DD27D91845009D993E /* Dijkstra.swift */; };
 		8366856927D7C748003950E1 /* BreachSolverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366856827D7C748003950E1 /* BreachSolverApp.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		83180CBD27DE7A3E00238263 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		834DB4DC27D91845009D993E /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		834DB4DD27D91845009D993E /* Dijkstra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dijkstra.swift; sourceTree = "<group>"; };
 		8366856527D7C748003950E1 /* BreachSolver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreachSolver.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,6 +179,7 @@
 				83E1BBD027DA5C5800DFE454 /* Node.swift */,
 				83E1BBD227DA5C5F00DFE454 /* Coord.swift */,
 				83E1BBD627DA5C9B00DFE454 /* Daemon.swift */,
+				83180CBD27DE7A3E00238263 /* Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				834DB4DE27D91845009D993E /* Heap.swift in Sources */,
 				83C6D1FA27DB9003000840CC /* PathedMatrixView.swift in Sources */,
 				83E1BBD527DA5C7A00DFE454 /* Solver.swift in Sources */,
+				83180CBE27DE7A3E00238263 /* Constants.swift in Sources */,
 				834DB4DF27D91845009D993E /* Dijkstra.swift in Sources */,
 				83E1BBDC27DA795F00DFE454 /* ScanDocumentView.swift in Sources */,
 				83C6D1F827DB8DAC000840CC /* OptionallyNumberedCodeView.swift in Sources */,
