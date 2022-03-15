@@ -2,7 +2,7 @@ struct Constants {
     static let allowedCodes = ["1C", "BD", "FF", "7A", "E9", "55"]
     static let testTexts: [RecognisedBreachText] = [
         .init(matrix: [
-            ["1C", "1C", "1C", "BD", "FF", "1C", "7A"],
+            ["1D", "1C", "1C", "BD", "FF", "1C", "7A"],
             ["7A", "1C", "1C", "7A", "7A", "E9", "BD"],
             ["55", "7A", "BD", "7A", "1C", "1C", "55"],
             ["1C", "7A", "BD", "E9", "7A", "1C", "1C"],

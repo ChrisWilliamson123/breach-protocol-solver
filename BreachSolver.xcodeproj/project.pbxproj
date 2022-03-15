@@ -11,7 +11,7 @@
 		834DB4DE27D91845009D993E /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DB4DC27D91845009D993E /* Heap.swift */; };
 		834DB4DF27D91845009D993E /* Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DB4DD27D91845009D993E /* Dijkstra.swift */; };
 		8366856927D7C748003950E1 /* BreachSolverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366856827D7C748003950E1 /* BreachSolverApp.swift */; };
-		8366856B27D7C748003950E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366856A27D7C748003950E1 /* ContentView.swift */; };
+		8366856B27D7C748003950E1 /* HomepageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366856A27D7C748003950E1 /* HomepageView.swift */; };
 		8366856D27D7C74A003950E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8366856C27D7C74A003950E1 /* Assets.xcassets */; };
 		8366857027D7C74A003950E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8366856F27D7C74A003950E1 /* Preview Assets.xcassets */; };
 		8366857A27D7C74B003950E1 /* BreachSolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366857927D7C74B003950E1 /* BreachSolverTests.swift */; };
@@ -20,6 +20,7 @@
 		8366859427D7C7ED003950E1 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 8366859327D7C7ED003950E1 /* Algorithms */; };
 		8395406327E1281200051E8E /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8395406227E1281200051E8E /* AlertItem.swift */; };
 		8395406527E128A000051E8E /* HomepageFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8395406427E128A000051E8E /* HomepageFooterView.swift */; };
+		8395406927E1314000051E8E /* ScannedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8395406827E1314000051E8E /* ScannedTextView.swift */; };
 		83C6D1F427DB8B48000840CC /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6D1F327DB8B48000840CC /* InstructionsView.swift */; };
 		83C6D1F627DB8BC4000840CC /* SolvingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6D1F527DB8BC4000840CC /* SolvingView.swift */; };
 		83C6D1F827DB8DAC000840CC /* OptionallyNumberedCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6D1F727DB8DAC000840CC /* OptionallyNumberedCodeView.swift */; };
@@ -56,7 +57,7 @@
 		834DB4DD27D91845009D993E /* Dijkstra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dijkstra.swift; sourceTree = "<group>"; };
 		8366856527D7C748003950E1 /* BreachSolver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreachSolver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8366856827D7C748003950E1 /* BreachSolverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreachSolverApp.swift; sourceTree = "<group>"; };
-		8366856A27D7C748003950E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8366856A27D7C748003950E1 /* HomepageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageView.swift; sourceTree = "<group>"; };
 		8366856C27D7C74A003950E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8366856F27D7C74A003950E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8366857527D7C74B003950E1 /* BreachSolverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreachSolverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +67,7 @@
 		8366858527D7C74B003950E1 /* BreachSolverUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreachSolverUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8395406227E1281200051E8E /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
 		8395406427E128A000051E8E /* HomepageFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageFooterView.swift; sourceTree = "<group>"; };
+		8395406827E1314000051E8E /* ScannedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannedTextView.swift; sourceTree = "<group>"; };
 		83C6D1EE27DA7EAB000840CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		83C6D1F327DB8B48000840CC /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
 		83C6D1F527DB8BC4000840CC /* SolvingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolvingView.swift; sourceTree = "<group>"; };
@@ -134,7 +136,6 @@
 				83E1BBCD27DA5C1F00DFE454 /* Models */,
 				8366859527D7C9D8003950E1 /* Helpers */,
 				8366856827D7C748003950E1 /* BreachSolverApp.swift */,
-				8366856A27D7C748003950E1 /* ContentView.swift */,
 				8366856C27D7C74A003950E1 /* Assets.xcassets */,
 				8366856E27D7C74A003950E1 /* Preview Content */,
 				83E1BBD427DA5C7A00DFE454 /* Solver.swift */,
@@ -199,6 +200,8 @@
 				83C6D1F527DB8BC4000840CC /* SolvingView.swift */,
 				83C6D1F727DB8DAC000840CC /* OptionallyNumberedCodeView.swift */,
 				83C6D1F927DB9003000840CC /* PathedMatrixView.swift */,
+				8366856A27D7C748003950E1 /* HomepageView.swift */,
+				8395406827E1314000051E8E /* ScannedTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -351,10 +354,11 @@
 				8395406527E128A000051E8E /* HomepageFooterView.swift in Sources */,
 				83E1BBDC27DA795F00DFE454 /* ScanDocumentView.swift in Sources */,
 				83C6D1F827DB8DAC000840CC /* OptionallyNumberedCodeView.swift in Sources */,
-				8366856B27D7C748003950E1 /* ContentView.swift in Sources */,
+				8366856B27D7C748003950E1 /* HomepageView.swift in Sources */,
 				8395406327E1281200051E8E /* AlertItem.swift in Sources */,
 				83E1BBD127DA5C5800DFE454 /* Node.swift in Sources */,
 				8366856927D7C748003950E1 /* BreachSolverApp.swift in Sources */,
+				8395406927E1314000051E8E /* ScannedTextView.swift in Sources */,
 				83E1BBD727DA5C9B00DFE454 /* Daemon.swift in Sources */,
 				83E1BBCF27DA5C3C00DFE454 /* SequenceToSolve.swift in Sources */,
 			);
