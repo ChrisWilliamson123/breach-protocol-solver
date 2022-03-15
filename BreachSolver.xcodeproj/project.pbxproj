@@ -18,6 +18,8 @@
 		8366858427D7C74B003950E1 /* BreachSolverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366858327D7C74B003950E1 /* BreachSolverUITests.swift */; };
 		8366858627D7C74B003950E1 /* BreachSolverUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366858527D7C74B003950E1 /* BreachSolverUITestsLaunchTests.swift */; };
 		8366859427D7C7ED003950E1 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 8366859327D7C7ED003950E1 /* Algorithms */; };
+		8395406327E1281200051E8E /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8395406227E1281200051E8E /* AlertItem.swift */; };
+		8395406527E128A000051E8E /* HomepageFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8395406427E128A000051E8E /* HomepageFooterView.swift */; };
 		83C6D1F427DB8B48000840CC /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6D1F327DB8B48000840CC /* InstructionsView.swift */; };
 		83C6D1F627DB8BC4000840CC /* SolvingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6D1F527DB8BC4000840CC /* SolvingView.swift */; };
 		83C6D1F827DB8DAC000840CC /* OptionallyNumberedCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6D1F727DB8DAC000840CC /* OptionallyNumberedCodeView.swift */; };
@@ -62,6 +64,8 @@
 		8366857F27D7C74B003950E1 /* BreachSolverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreachSolverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8366858327D7C74B003950E1 /* BreachSolverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreachSolverUITests.swift; sourceTree = "<group>"; };
 		8366858527D7C74B003950E1 /* BreachSolverUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreachSolverUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8395406227E1281200051E8E /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		8395406427E128A000051E8E /* HomepageFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageFooterView.swift; sourceTree = "<group>"; };
 		83C6D1EE27DA7EAB000840CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		83C6D1F327DB8B48000840CC /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
 		83C6D1F527DB8BC4000840CC /* SolvingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolvingView.swift; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 				83E1BBD227DA5C5F00DFE454 /* Coord.swift */,
 				83E1BBD627DA5C9B00DFE454 /* Daemon.swift */,
 				83180CBD27DE7A3E00238263 /* Constants.swift */,
+				8395406227E1281200051E8E /* AlertItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 		83E1BBD827DA645D00DFE454 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8395406427E128A000051E8E /* HomepageFooterView.swift */,
 				83E1BBD927DA646900DFE454 /* SequenceView.swift */,
 				83E1BBDB27DA795F00DFE454 /* ScanDocumentView.swift */,
 				83C6D1F327DB8B48000840CC /* InstructionsView.swift */,
@@ -342,9 +348,11 @@
 				83E1BBD527DA5C7A00DFE454 /* Solver.swift in Sources */,
 				83180CBE27DE7A3E00238263 /* Constants.swift in Sources */,
 				834DB4DF27D91845009D993E /* Dijkstra.swift in Sources */,
+				8395406527E128A000051E8E /* HomepageFooterView.swift in Sources */,
 				83E1BBDC27DA795F00DFE454 /* ScanDocumentView.swift in Sources */,
 				83C6D1F827DB8DAC000840CC /* OptionallyNumberedCodeView.swift in Sources */,
 				8366856B27D7C748003950E1 /* ContentView.swift in Sources */,
+				8395406327E1281200051E8E /* AlertItem.swift in Sources */,
 				83E1BBD127DA5C5800DFE454 /* Node.swift in Sources */,
 				8366856927D7C748003950E1 /* BreachSolverApp.swift in Sources */,
 				83E1BBD727DA5C9B00DFE454 /* Daemon.swift in Sources */,

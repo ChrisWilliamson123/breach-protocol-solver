@@ -9,62 +9,41 @@ import SwiftUI
 import Algorithms
 
 struct ContentView: View {
-    struct AlertItem: Identifiable {
-        var id = UUID()
-        var title: String = "Please choose correct code"
-        var actions: [(title: String, action: () -> ())]
-    }
-    
     @State private var showingScanningView = false
     @State private var alertItem: AlertItem?
-    @State private var bufferSize = 6
-//    @State private var recognizedText: RecognisedBreachText?
-    @State private var recognizedText: RecognisedBreachText? = Constants.testTexts[2]
+    @State private var bufferSize: Double = 6
+    @State private var recognizedText: RecognisedBreachText?
+//    @State private var recognizedText: RecognisedBreachText? = Constants.testTexts[2]
     
     var body: some View {
         NavigationView {
             VStack {
-                recognizedText.map({ text in
+                if let recognizedText = recognizedText {
                     ScrollView {
                         ZStack {
                             RoundedRectangle(cornerRadius: 20, style: .continuous)
                                 .fill(Color.gray.opacity(0.2))
                             
                             VStack(spacing: 16) {
-                                createScannedTextView(using: text)
-                                NavigationLink(destination: SolvingView(text: text, bufferSize: bufferSize)) {
+                                createScannedTextView(using: recognizedText)
+                                NavigationLink(destination: SolvingView(text: recognizedText, bufferSize: Int(bufferSize))) {
                                     Text("SOLVE")
                                         .font(.system(size: 24, design: .monospaced))
                                         .padding()
                                         .foregroundColor(.white)
                                         .background(Capsule().fill(.blue))
-                                }.disabled(!text.canSolve)
+                                }.disabled(!recognizedText.canSolve)
                             }.padding()
                         }.padding()
                     }
-                })
-                
-                if recognizedText == nil {
+                } else {
                     InstructionsView()
                 }
                 
                 Spacer()
                 
-                HStack {
-                    Stepper("Buffer size: \(Int(bufferSize))", value: $bufferSize, in: 4...9, step: 1).frame(width: 230)
-                    Spacer()
-                    
-                    Button(action: {
-                        showingScanningView = true
-                    }) {
-                        Text("SCAN")
-                    }
-                    .font(.system(size: 16, design: .monospaced))
+                HomepageFooterView(bufferSize: $bufferSize, showingScanningView: $showingScanningView)
                     .padding()
-                    .foregroundColor(.white)
-                    .background(Capsule().fill(.blue))
-                }
-                .padding()
             }
             .navigationBarTitle("Breach Protocol Solver")
             .sheet(isPresented: $showingScanningView) {
